@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            /*display: inline; -> serve para transformar uma caixa box-level em uma inline-level*/
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkblue;*/
+            border: 10px solid darkblue; /* shorthand da borda. Precisa ser na ordem de cima pra baixo como no exemplo acima.*/
+            
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+            
+            padding: 8px 10px 8px 10px; /* shorthand do preenchimento. Precisa ser feito no sentido horário como no exemplo acima. Caso todos sejam iguais, pode-se usar somente padding: 10px*/
+            
+            /*margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 20px;*/
+            /*margin: auto;*/
+
+            margin: 10px auto 40px auto; /* o shortand da margem funciona igual ao do preenchimento. Porém, é possível que seja feita a escolha de quais margens vão ficar centralizadas, como demonstrado no exemplo*/
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: rgb(255, 0, 0);*/
+
+            outline: 5px dashed rgb(255, 0, 0); /* shorthand de outline segue a ordem também*/
+            }
+
+        a {
+            /* display: block; -> transofrma uma caixa inline-level em uma box-level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a></p>
+</body>
+</html>
