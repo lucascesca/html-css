@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -29,6 +30,12 @@
         thead, tfoot {
             background-color: rgb(0, 0, 0);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0; /* faz grudar no topo com 0px*/
+            background-color: rgb(0, 0, 0);
         }
 
         tbody > tr:nth-child(odd){
@@ -112,6 +119,34 @@
             <tr>
                 <td>Maranhão</td>
                 <td class="numero">6.800.605</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="numero">4 108 508</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="numero">4 030 961</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">3 952 262</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">3 784 239</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">3 303 953</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="numero">3 270 174</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="numero">3 125 254</td>
             </tr>
         </tbody>
         <tfoot>
