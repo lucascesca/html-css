@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* Abaixo os tamanhos de tela de cada dispositivo (breakpoints)
+Esses dados e códigos foram retirados do W3C
+Os dois primeiros não serão utilizados, pois já foi editado o código mobile first
+ 
+Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #desktop {display: none;}
+    #tv {display: none;}
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #desktop {display: block;}
+    #tv {display: none;}
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #desktop {display: none;}
+    #tv {display: block;}
+ } 
+
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg); /*desnecessário, pois não imprimi-se fundo de site*/ 
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #desktop {display: none;}
+    #tv {display: none;}
+}
