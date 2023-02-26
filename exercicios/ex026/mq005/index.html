@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span> <!--coloca o símbolo desejado-->
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testanto Media Query</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia ratione eos sed commodi nobis tempora possimus facere? Ipsa magni beatae reprehenderit, nihil aliquam nesciunt sapiente temporibus nemo eius numquam eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorem distinctio mollitia expedita pariatur, perspiciatis nobis molestias iure assumenda, dolor fugit cumque doloremque. Dignissimos, recusandae voluptate provident rerum quia sapiente!</p> <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta excepturi, minus tenetur dolore aliquam, ipsum voluptate eius fugiat illum possimus sint quo id et necessitatibus magni, magnam non blanditiis laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequuntur deleniti ratione nulla magnam vel delectus cumque, nihil aliquid necessitatibus quasi dignissimos iure atque perferendis cupiditate quisquam laudantium et corrupti.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (menu.style.display == "block") {
+                menu.style.display = "none"
+            }
+            else {
+                menu.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>
